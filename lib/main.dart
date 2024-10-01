@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_widget/widgets/drawer_widget.dart';
+import 'package:task_widget/widgets/tabbar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         listTileTheme: ListTileThemeData(
           selectedTileColor: Colors.purple[100],
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
           minVerticalPadding: 15
         )
       ),
-      home: DrawerWidget(),
+      home: TabBarWidget(),
     );
   }
 }
