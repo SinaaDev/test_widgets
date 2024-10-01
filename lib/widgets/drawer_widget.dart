@@ -8,9 +8,7 @@ class DrawerWidget extends StatefulWidget {
 }
 
 class _DrawerWidgetState extends State<DrawerWidget> {
-
   int selectedIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +20,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
             children: [
               const UserAccountsDrawerHeader(
                 currentAccountPicture: CircleAvatar(radius: 10,child: Icon(Icons.person,size: 30,color: Colors.grey,),),
-                accountName: Text('Alisina',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                accountName: Text('Alisina Haidari',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
                 accountEmail: Text('alisina.haidari2004@gmail.com',style: TextStyle(color: Colors.black),),
                 decoration: BoxDecoration(color: Colors.transparent),
               ),
