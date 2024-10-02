@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_widget/widgets/bottom_bar_widget.dart';
+import 'package:task_widget/widgets/dialog_widget.dart';
 import 'package:task_widget/widgets/drawer_widget.dart';
 import 'package:task_widget/widgets/tabbar_widget.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           minVerticalPadding: 15
         )
       ),
-      home: BottomBarWidget(),
+      home: DialogWidget(),
     );
   }
 }
