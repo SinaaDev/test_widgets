@@ -10,13 +10,13 @@ class TabBarWidget extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          bottom: TabBar(tabs: [
+          bottom: const TabBar(tabs: [
             Tab(icon: Icon(CupertinoIcons.car),),
             Tab(icon: Icon(Icons.directions_transit),),
             Tab(icon: Icon(Icons.directions_bike),),
           ]),
         ),
-        body: TabBarView(children: [
+        body: const TabBarView(children: [
           Center(child: Text('car'),),
           Center(child: Text('train'),),
           Center(child: Text('bike'),),

@@ -13,6 +13,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
+      body: Center(child: ElevatedButton(onPressed: (){Navigator.pop(context);},child: Text('pop'),),),
       drawer: Drawer(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),

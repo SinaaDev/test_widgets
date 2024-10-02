@@ -25,7 +25,7 @@ class _MyExpansionPanelListState extends State<MyExpansionPanelList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Flutter Expansion Panel'),backgroundColor: Colors.green[200],),
+      appBar: AppBar(title: const Text('Flutter Expansion Panel'),backgroundColor: Colors.green[200],),
       body: SafeArea(
         child: SingleChildScrollView(
           child: ExpansionPanelList(

@@ -35,7 +35,7 @@ class ImageViewer extends StatelessWidget {
       body: Hero(
         tag: url,
         child: Center(
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: 300,
             child: Image.network(url),

@@ -5,11 +5,11 @@ class DialogWidget extends StatelessWidget {
 
   void _openAlertDialog(BuildContext context){
     showDialog(context: context, builder: (context) => AlertDialog(
-      title: Text('Reset Settings?'),
-      content: Text('This will reset your device to its default factory settings'),
+      title: const Text('Reset Settings?'),
+      content: const Text('This will reset your device to its default factory settings'),
       actions: [
-        TextButton(onPressed: ()=>Navigator.pop(context), child: Text('CANCEL')),
-        TextButton(onPressed: ()=>Navigator.pop(context), child: Text('ACCEPT')),
+        TextButton(onPressed: ()=>Navigator.pop(context), child: const Text('CANCEL')),
+        TextButton(onPressed: ()=>Navigator.pop(context), child: const Text('ACCEPT')),
       ],
     ),);
   }
@@ -17,10 +17,11 @@ class DialogWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: ElevatedButton(
           onPressed:()=> _openAlertDialog(context),
-          child: Text('Reset Setting'),
+          child: const Text('Reset Setting'),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
             foregroundColor: Colors.white,
