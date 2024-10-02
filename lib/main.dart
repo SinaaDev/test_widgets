@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_widget/widgets/bottom_bar_widget.dart';
+import 'package:task_widget/widgets/dashboard_widget.dart';
 import 'package:task_widget/widgets/dialog_widget.dart';
 import 'package:task_widget/widgets/drawer_widget.dart';
 import 'package:task_widget/widgets/expansion_panel_widget.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           minVerticalPadding: 15
         )
       ),
-      home:MyExpansionPanelList(),
+      home:DashboardWidget(),
     );
   }
 }
